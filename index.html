@@ -20,7 +20,7 @@
     <header>
       <!-- bg-[#F85559;] -->
       <div
-        class="navbar bg-white md:bg-[#F85559;] max-w-screen-xl h-24 mx-auto rounded-full font-sans"
+        class="navbar mt-10 bg-white md:bg-[#F85559;] max-w-screen-xl h-24 mx-auto rounded-full font-sans"
       >
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg text-white font-medium">
@@ -113,7 +113,7 @@
     <!-- Banner section starts here  -->
 
     <div class="max-w-screen-xl mx-auto md:mt-14 flex justify-center">
-      <div class="carousel lg:max-w-5xl">
+      <div class="carousel lg:max-w-7xl">
         <div id="slide1" class="carousel-item relative w-full">
           <img
             class="brightness-75"
@@ -139,7 +139,11 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img class="brightness-75" src="./images/banner2.png" class="w-full" />
+          <img
+            class="brightness-75"
+            src="./images/banner2.png"
+            class="w-full"
+          />
           <h1
             class="absolute text-center text-2xl md:text-5xl lg:text-6xl font-bold w-3/4 font-sans text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
@@ -159,7 +163,11 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img class="brightness-75" src="./images/banner3.png" class="w-full" />
+          <img
+            class="brightness-75"
+            src="./images/banner3.png"
+            class="w-full"
+          />
           <h1
             class="absolute text-center text-2xl md:text-5xl lg:text-6xl font-bold w-3/4 font-sans text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
@@ -179,7 +187,11 @@
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img class="brightness-75" src="./images/banner4.png" class="w-full" />
+          <img
+            class="brightness-75"
+            src="./images/banner4.png"
+            class="w-full"
+          />
           <h1
             class="absolute text-center text-2xl md:text-5xl lg:text-6xl font-bold w-3/4 font-sans text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
@@ -203,50 +215,253 @@
 
     <!-- Banner section ends here  -->
 
-
     <!-- Deals section starts here  -->
     <section class="max-w-screen-xl mx-auto">
-
-      <div class="deal-container mt-14 flex-row justify-center md:flex md:justify-between">
+      <div
+        class="deal-container mt-10 lg:mt-40 md:ml-5 flex-row justify-center md:flex md:justify-between"
+      >
         <div class="deal-text md:w-1/2">
-          <h2 class="text-5xl font-bold text-center md:text-start">Deal of the day</h2>
-          <p class="text-center md:text-start text-base mt-3 text-gray-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <h2 class="text-5xl font-bold text-center md:text-start">
+            Deal of the day
+          </h2>
+          <p
+            class="text-center md:text-start text-sm md:text-base mt-3 text-gray-500 mb-8"
+          >
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
         </div>
 
-        <div class="deal-countdown w-2/3 mx-auto md:w-1">
-
+        <div class="deal-countdown w-2/3 mx-auto md:w-1/2 lg:w-1">
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:15;"></span>
+                <span style="--value: 15"></span>
               </span>
-              days
-            </div> 
+              Days
+            </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:10;"></span>
+                <span style="--value: 10"></span>
               </span>
-              hours
-            </div> 
+              Hours
+            </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:24;"></span>
+                <span style="--value: 24"></span>
               </span>
-              min
-            </div> 
+              Minutes
+            </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:30;"></span>
+                <span style="--value: 30"></span>
               </span>
-              sec
+              Seconds
             </div>
           </div>
-
         </div>
       </div>
-
     </section>
 
     <!-- Deals section ends here  -->
+
+    <!-- Cards section starts here  -->
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 max-w-screen-xl mx-auto"
+    >
+      <!-- first card  -->
+      <div
+        class="card w-72 bg-base-100 p-9 border border-gray-300 mb-10 lg:mb-0 justify-self-center md:justify-center"
+      >
+        <figure>
+          <img class="w-24" src="./images/fruit6.png" alt="Apples" />
+        </figure>
+        <div class="card-body">
+          <h2 class="justify-center card-title border-b-2">12.90$ - 18.85$</h2>
+          <p class="text-center">Apples</p>
+
+          <div class="rating justify-center">
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+          </div>
+
+          <div class="card-actions justify-center">
+            <a class="text-lg font-semibold text-[#F85559]" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- second card  -->
+      <div
+        class="card w-72 bg-base-100 p-9 border border-gray-300 mb-10 lg:mb-0 justify-self-center md:justify-center"
+      >
+        <figure>
+          <img class="w-28" src="./images/fruit7.png" alt="Apples" />
+        </figure>
+        <div class="card-body">
+          <h2 class="justify-center card-title border-b-2">12.90$ - 18.85$</h2>
+          <p class="text-center">Apples</p>
+
+          <div class="rating justify-center">
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+          </div>
+
+          <div class="card-actions justify-center">
+            <a class="text-lg font-semibold text-[#F85559]" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- third card  -->
+      <div
+        class="card w-72 bg-base-100 p-9 border border-gray-300 mb-10 lg:mb-0 justify-self-center md:justify-center"
+      >
+        <figure>
+          <img class="w-28" src="./images/fruit8.png" alt="Apples" />
+        </figure>
+        <div class="card-body">
+          <h2 class="justify-center card-title border-b-2">12.90$ - 18.85$</h2>
+          <p class="text-center">Apples</p>
+
+          <div class="rating justify-center">
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+          </div>
+
+          <div class="card-actions justify-center">
+            <a class="text-lg font-semibold text-[#F85559]" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- fourth card  -->
+      <div
+        class="card w-72 bg-base-100 p-9 border border-gray-300 mb-10 lg:mb-0 justify-self-center md:justify-center"
+      >
+        <figure>
+          <img class="w-28" src="./images/fruit9.png" alt="Apples" />
+        </figure>
+        <div class="card-body">
+          <h2 class="justify-center card-title border-b-2">12.90$ - 18.85$</h2>
+          <p class="text-center">Apples</p>
+
+          <div class="rating justify-center">
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#F85559]"
+            />
+          </div>
+
+          <div class="card-actions justify-center">
+            <a class="text-lg font-semibold text-[#F85559]" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="mt-2 lg:mt-5 max-w-screen-xl mx-auto flex justify-center">
+      <button class="w-28 btn btn-error bg-[#F85559;] capitalize text-white">
+        Shop All
+      </button>
+    </div>
+
+    <!-- Cards section ends here  -->
   </body>
 </html>
