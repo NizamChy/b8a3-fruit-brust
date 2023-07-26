@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome link 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <!-- bg-[#F85559;] -->
+      <div
+        class="navbar bg-white md:bg-[#F85559;] max-w-screen-xl h-24 mx-auto rounded-full font-sans"
+      >
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg text-white font-medium">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-center md:text-white text-4xl font-bold gap-3">
+          <img src="./images/logo.png" alt="" />
+          <p>Fruit Burst</p>
+        </div>
+
+        <div class="navbar-end">
+          <div class="search-bar hidden lg:flex">
+            <!-- component -->
+            <div class="flex items-center justify-center mr-6">
+              <form method="GET">
+                <div class="relative text-gray-600 focus-within:text-gray-400">
+                  <span
+                    class="absolute inset-y-0 right-2 flex items-center pl-2"
+                  >
+                    <button
+                      type="submit"
+                      class="p-1 focus:outline-none focus:shadow-outline"
+                    >
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </span>
+                  <input
+                    type="search"
+                    name="q"
+                    class="py-2 text-sm text-white bg-white rounded-full pl-10 focus:outline-none focus:bg-white focus:text-gray-900"
+                    placeholder="Search here"
+                    autocomplete="off"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end lg:hidden">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 mr-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content -ml-20 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner section goes here  -->
+    <!-- <section>
+        <div class="carousel max-w-6xl mt-20 md:ml-40">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+  </body>
+</html>
